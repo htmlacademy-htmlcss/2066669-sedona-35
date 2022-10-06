@@ -22,14 +22,25 @@ body {
     background-color: #fff;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .button {
     font-family: inherit;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     border-style: none;
+    color: #fff;
+    padding: 8px 50px;
 }
 
 /* Pages */
@@ -56,6 +67,10 @@ body {
     color: #000;
 }
 
+.navigation-button {
+    background-color: #756157;
+}
+
 /* Main */
 
 .main-index {
@@ -80,7 +95,7 @@ body {
     color: #000;
 }
 
-.advantages-header {
+.advantages-header h2{
     text-align: center;
     font-family: "PT Sans";
     font-size: 30px;
@@ -92,6 +107,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-transform: none;
+    text-align: center;
 }
 
 .advantages-list {
@@ -117,7 +133,7 @@ body {
 }
 
 .find-hotel_title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -129,10 +145,10 @@ body {
 }
 
 .find-button {
-    padding: 8px 50px;
     width: 376px;
     height: 52px;
     background: #756157;
+    border-radius: 4px;
 }
 
 .find-button {
@@ -181,6 +197,7 @@ body {
     background-color: #82B3D3;
     color: #fff;
     border-radius: 0 4px 4px 0;
+    padding: 8px 50px;
 }
 
 /* Footer */
@@ -226,6 +243,8 @@ body {
 
 .catalog-filter {
     background-image: url(../images/catalog_background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .catalog-filter-title {
@@ -250,6 +269,15 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+}
+
+.button-apply {
+    background-color: #82B3D3;
+    border-radius: 4px;
+}
+
+.button-reset {
+background: none;
 }
 
 .sorting-container {
