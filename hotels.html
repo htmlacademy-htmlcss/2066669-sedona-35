@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -39,7 +40,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button class="navigation-button">ХОЧУ СЮДА!</button>
+            <button class="button navigation-button">ХОЧУ СЮДА!</button>
           </li>
 
         </ul>
@@ -83,7 +84,7 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi">
-                  WI-FI
+                  Wi-Fi
                 </label>
               </li>
           </ul>
@@ -117,22 +118,23 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сброс</button>
+          <button class="button button-apply" type="submit">Применить</button>
+          <button class="button button-reset" type="submit">Сбросить</button>
         </form>
 
-        <p>Найдено гостиниц:
+        <p class="catalog-result">Найдено гостиниц:
           <span>38</span>
         </p>
 
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала дешевое</option>
+            <option value="cheap">Сначала популярное</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+        </div>
 
         <a class="button button-light" href="#">
           <span class="visually-hidden">Показать карточки</span>
@@ -149,7 +151,7 @@
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="/images/AmaraResort&Spa.jpg" width="300" height="212" alt="">
+              <img class="product-card-image" src="images/AmaraResort&Spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
               <h2 class="product-card-title">Amara Resort & Spa</h2>
             </a>
             <p class="product-card-description">
@@ -164,7 +166,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="/images/Villas_at_PocoDiablo.jpg" width="300" height="212" alt="">
+              <img class="product-card-image" src="images/Villas_at_PocoDiablo.jpg" width="300" height="212" alt="Villas at PocoDiablo">
               <h2 class="product-card-title">Villas at Poco Diablo</h2>
             </a>
             <p class="product-card-description">
@@ -179,7 +181,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="/images/DesertQuail_Inn.jpg" width="300" height="212" alt="">
+              <img class="product-card-image" src="images/DesertQuail_Inn.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h2 class="product-card-title">Desert Quail Inn</h2>
             </a>
             <p class="product-card-description">
@@ -194,7 +196,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="/images/GreenTreeInn.jpg" width="300" height="212" alt="">
+              <img class="product-card-image" src="images/GreenTreeInn.jpg" width="300" height="212" alt="Green Tree Inn">
               <h2 class="product-card-title">GreenTree Inn</h2>
             </a>
             <p class="product-card-description">
@@ -210,11 +212,11 @@
 
 
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item pagination-current">
             <span>1</span>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="">2</a>
+            <a class="pagination-link" href="">2</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="">3</a>
@@ -231,12 +233,12 @@
         </ul>
       </section>
 
-      <div class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="subscribe-grey-bg">
+        <h2 class="subscribe-title-hotels">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
         <button class="button subscribe-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
+          <span>Подписаться</span>
         </button>
       </div>
     </main>
