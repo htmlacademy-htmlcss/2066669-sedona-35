@@ -30,6 +30,7 @@
                 <span class="visually-hidden">
                   Поиск
                 </span>
+                <img src="images/search.svg" alt="#">
               </a>
             </li>
             <li class="navigation-item">
@@ -37,6 +38,7 @@
                 <span class="visually-hidden">
                   Лайки
                 </span>
+                <img src="images/Likes.svg" alt="#">
               </a>
             </li>
             <li class="navigation-item">
@@ -116,9 +118,10 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             </fieldset>
-
-            <button class="button button-apply" type="submit">Применить</button>
-            <button class="button button-reset" type="submit">Сбросить</button>
+            <div class="catalog-button">
+              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-reset" type="submit">Сбросить</button>
+            </div>
           </form>
         </header>
 
@@ -136,18 +139,22 @@
                 <option value="expensive">Сначала дорогое</option>
               </select>
             </div>
+              <div class="sorting-button-list">
+                <a class="sorting-button sorting-button-light" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                  <img src="images/View-blocks.svg" alt="">
+                </a>
 
-            <a class="sorting-button sorting-button-light" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
+                <a class="sorting-button" href="#">
+                  <span class="visually-hidden">Слайдер</span>
+                  <img src="images/View-slide.svg" alt="">
+                </a>
 
-            <a class="sorting-button" href="#">
-              <span class="visually-hidden">Слайдер</span>
-            </a>
-
-            <a class="sorting-button" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+                <a class="sorting-button" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                  <img src="images/View-list.svg" alt="">
+                </a>
+              </div>
           </div>
           <ul class="product-list">
             <li class="product-card">
@@ -159,10 +166,17 @@
                 <span>Гостиница</span>
                 <span>От 4000 ₽</span>
               </p>
-              <a class="product-card-button button" href="#">подробнее</a>
-              <a class="product-card-button button" href="#">в избранное</a>
-              <p><span class="visually-hidden">4 звезды</span></p>
-              <p class="hotels-raiting">Рейтинг: 8,5</p>
+              <div class="product-card-list">
+                <a class="product-card-button-brown button" href="#">подробнее</a>
+                <a class="product-card-button-blue button" href="#">в избранное</a>
+              </div>
+              <div class="raiting">
+                <p class="hotel-stars hotel-stars-3">
+                  <img src="images/Star.svg" alt="">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <p class="hotels-raiting">Рейтинг: 8,5</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -174,8 +188,10 @@
                 <span>Гостиница</span>
                 <span>От 5000 ₽</span>
               </p>
-              <a class="product-card-button button" href="#">подробнее</a>
-              <a class="product-card-button button" href="#">в избранное</a>
+              <div class="product-card-list">
+                <a class="product-card-button-brown button" href="#">подробнее</a>
+                <a class="product-card-button-blue button" href="#">в избранное</a>
+              </div>
               <p><span class="visually-hidden">4 звезды</span></p>
               <p class="hotels-raiting">Рейтинг: 9,2</p>
             </li>
@@ -189,8 +205,10 @@
                 <span>Гостиница</span>
                 <span>От 2500 ₽</span>
               </p>
-              <a class="product-card-button button" href="#">подробнее</a>
-              <a class="product-card-button button" href="#">в избранное</a>
+              <div class="product-card-list">
+                <a class="product-card-button-brown button" href="#">подробнее</a>
+                <a class="product-card-button-blue button" href="#">в избранное</a>
+              </div>
               <p><span class="visually-hidden">3 звезды</span></p>
               <p class="hotels-raiting">Рейтинг: 6,9</p>
             </li>
@@ -204,12 +222,16 @@
                 <span>Гостиница</span>
                 <span>От 1500 ₽</span>
               </p>
-              <a class="product-card-button button" href="#">подробнее</a>
-              <a class="product-card-button button" href="#">в избранное</a>
+              <div class="product-card-list">
+                <a class="product-card-button-brown button" href="#">подробнее</a>
+                <a class="product-card-button-blue button" href="#">в избранное</a>
+              </div>
               <p><span class="visually-hidden">2 звезды</span></p>
               <p class="hotels-raiting">Рейтинг: 5,0</p>
             </li>
           </ul>
+
+          <div class="pagination-line"></div>
 
 
           <ul class="pagination">
