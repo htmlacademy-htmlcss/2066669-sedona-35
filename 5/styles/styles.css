@@ -152,11 +152,11 @@ body {
     width: 100%;
     background-image: url(../images/saw.svg);
     height: 57px;
-    position: absolute;
+    position: relative;
     background-position: bottom;
     background-repeat: no-repeat;
     left: 0;
-    bottom: 335px;
+    bottom: -25px;
 }
 
 .logo {
@@ -329,10 +329,13 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .subscribe-input::placeholder {
-    transform: translateX(18px);
+    /* transform: translateX(18px); */
+    padding-left: 18px;
 }
 
 .subscribe-button {
@@ -409,7 +412,7 @@ body {
 
 .catalog-filter {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .catalog-filter-group {
@@ -633,30 +636,29 @@ body {
 }
 
 .pagination-item {
+    margin-right: 8px;
+}
+
+.pagination-link {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
     width: 60px;
     height: 60px;
     border-radius: 4px;
     background-color: #81B3D3;
-    margin-right: 8px;
-}
-
-.pagination-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 4px;
 }
 
 .pagination-current span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -664,10 +666,9 @@ body {
     background-color: #F2F2F2;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.pagination-current {
-    background-color: #F2F2F2;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
 }
 
 /* Subscribe */
