@@ -536,12 +536,24 @@ button {
   line-height: 21px;
   color: #FFFFFF;
   list-style: none;
+  margin-bottom: 40px;
+}
 
+.breadcrumbs svg {
+    margin-right: 11px;
 }
 
 .breadcrumbs-link {
   color: inherit;
 }
+
+.breadcrumbs-item {
+  margin-right: 11px;
+}
+
+.breadcrumbs-item:last-child {
+    margin-right: 0;
+  }
 
 /* Catalog */
 
