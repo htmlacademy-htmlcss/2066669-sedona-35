@@ -225,6 +225,54 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="#" method="post">
+            <p class="modal-form-date">
+              <label for="form-date">Дата Заезда:</label>
+              <input class="form-date-field" type="text" id="form-date" placeholder="Укажите дату" name="form-date">
+            </p>
+            <div class="form-error">
+              <span>Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <p class="modal-form-date">
+              <label for="form-date">Дата Выезда:</label>
+              <input class="form-date-field" type="text" id="form-date" placeholder="Укажите дату" name="form-date">
+            </p>
+            <div class="form-message">
+              <span>На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+              <div class="modal-number-content">
+                <div class="modal-number-field">
+                  <label class="number-field-label" for="adult">Взрослые:</label>
+                  <span class="number-field-box">
+                    <button class="field-button minus" type="button"></button>
+                    <input class="field-number" id="adult" name="adult" type="number" value="2">
+                    <button class="field-button plus" type="button"></button>
+                  </span>
+                </div>
+                <div class="modal-number-field">
+                  <label class="number-field-label" for="children">Дети:</label>
+                  <span class="number-field-box">
+                    <button class="field-button minus" type="button"></button>
+                    <input class="field-number" id="children" name="children" type="number" value="2">
+                    <button class="field-button plus" type="button"></button>
+                  </span>
+                </div>
+
+              </div>
+            <button class="button button-form-date" type="button">найти</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
   </body>
 
 </html>
