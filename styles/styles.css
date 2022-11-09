@@ -956,21 +956,24 @@ button {
   user-select: none;
 }
 
-/* .control:hover {
+.control:hover {
   opacity: 0.6;
 }
 
 .control:active {
   opacity: 0.3;
-} */
+}
 
 .control input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
-  z-index: -1;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  margin: 0;
 }
 
 .checkbox__checkmark {
@@ -984,38 +987,17 @@ button {
   border-radius: 4px;
 }
 
-.control:hover input ~ .checkbox__checkmark {
+/* .control:hover input ~ .checkbox__checkmark {
   background-color: rgb(255, 255, 255, 0.6);
-}
+} */
 
 .control input[type="checkbox"]:checked ~ .checkbox__checkmark {
   background-image: url(../images/control=checkbox.svg);
 }
 
-.checkbox__checkmark:hover {
-  outline: 3 solid rgb(0, 0, 0, 0.3);
+.control input:focus + .checkbox__checkmark {
+  box-shadow: 0 0 0 3px #83B3D3;
 }
-
-
-/* .control input[type="checkbox"]:checked~.checkbox__checkmark {
-  opacity: 1;
-  background-image: url(../images/control=checkbox.svg);
-}
-
-.control:hover input~.checkbox__checkmark {
-  background-color: #eee;
-}
-
-.control .checkbox__checkmark {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  transition: background-color 0.25s ease;
-  border-radius: 4px;
-} */
 
 .control .checkbox__body {
   font-family: 'PT Sans';
@@ -1028,11 +1010,11 @@ button {
 
 /* Radio */
 
-.control-input[type="radio"]+.checkbox__checkmark {
+.control input[type="radio"]+.checkbox__checkmark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.checkbox__checkmark::before {
+.control input[type="radio"]:checked+.checkbox__checkmark::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1041,6 +1023,10 @@ button {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control input[type="radio"]:focus + .checkbox__checkmark {
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .catalog-button {
