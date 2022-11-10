@@ -195,7 +195,6 @@ button {
 }
 
 .navigation-button:focus {
-  outline: none;
   background-color: #615048;
 }
 
@@ -392,7 +391,6 @@ button {
 }
 
 .find-button:focus {
-  outline: none;
   background-color: #615048;
 }
 
@@ -478,7 +476,6 @@ button {
 }
 
 .subscribe-button:focus {
-  outline: none;
   background-color: #68A2CA;
 }
 
@@ -515,7 +512,6 @@ button {
 
 .button-social:focus {
   color: #68A2CA;
-  outline: none;
 }
 
 .button-social:active {
@@ -536,7 +532,6 @@ button {
 }
 
 .contacts-link:focus {
-  outline: none;
   color: #756157;
 }
 
@@ -553,7 +548,6 @@ button {
 }
 
 .htmlacademy-link:focus {
-  outline: none;
   color: #756157;
 }
 
@@ -702,9 +696,9 @@ button {
   background: #68A2CA;
 }
 
-.button-form-date:focus {
+/* .button-form-date:focus {
   outline: none;
-}
+} */
 
 .button-form-date:active {
   background: #68A2CA;
@@ -1046,7 +1040,6 @@ button {
 }
 
 .button-apply:focus {
-  outline: none;
   background: #68A2CA;
 }
 
@@ -1362,7 +1355,6 @@ button {
 }
 
 .product-card-button-brown:focus {
-  outline: none;
   background: #615048;
 }
 
@@ -1382,7 +1374,6 @@ button {
 }
 
 .product-card-button-blue:focus {
-  outline: none;
   background: #68A2CA;
 }
 
@@ -1455,7 +1446,6 @@ button {
 }
 
 .pagination-link:focus {
-  outline: none;
   background: #68A2CA;
 }
 
