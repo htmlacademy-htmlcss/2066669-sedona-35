@@ -1395,6 +1395,26 @@ button {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.product-card-button-green {
+  background: #7DB54F;
+  border-radius: 4px;
+  padding: 8px 18px;
+  margin-bottom: 16px;
+}
+
+.product-card-button-green:hover {
+  background: #6C9E42;
+}
+
+.product-card-button-green:focus {
+  background: #6C9E42;
+}
+
+.product-card-button-green:active {
+  background: rgba(125, 181, 79, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotel-stars {
   width: 140px;
   display: flex;
