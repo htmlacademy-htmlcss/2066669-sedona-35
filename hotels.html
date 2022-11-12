@@ -3,18 +3,21 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/jpg" href="./images/favicon.jpg">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
     <div class="container">
+
+      <!-- Header -->
+
       <header class="page-header">
         <nav class="navigation">
           <a href="index.html">
-            <img class="header-icon" src="images/header_logo.svg" width="140" height="70" alt="Логотип">
+            <img class="header-icon" src="./images/header_logo.svg" width="140" height="70" alt="Логотип">
           </a>
-
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -53,10 +56,11 @@
             <li class="navigation-item-button">
               <a class="button navigation-button" href="#">ХОЧУ СЮДА!</a>
             </li>
-
           </ul>
         </nav>
       </header>
+
+      <!-- Main -->
 
       <main class="main-inner">
         <header class="inner-header">
@@ -65,7 +69,7 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
-                <img src="images/breadcrumbs_logo.svg" alt="breadcrumbs logo">
+                <img src="./images/breadcrumbs_logo.svg" alt="breadcrumbs logo">
               </a>
             </li>
             <li>
@@ -80,7 +84,6 @@
             </li>
           </ul>
           <h2 class="visually-hidden">Список отелей с фильтрами</h2>
-
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -92,7 +95,6 @@
                     <span class="checkbox__body">Бассейн</span>
                   </label>
                 </li>
-
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="checkbox" name="parking" checked>
@@ -100,7 +102,6 @@
                     <span class="checkbox__body">Парковка</span>
                   </label>
                 </li>
-
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="checkbox" name="wi-fi">
@@ -116,13 +117,11 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input type="radio" name="catalog-group" value="hotel"
-                      checked>
+                    <input type="radio" name="catalog-group" value="hotel" checked>
                     <span class="checkbox__checkmark"></span>
                     <span class="checkbox__body">Гостиница</span>
                   </label>
                 </li>
-
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" name="catalog-group" value="motel">
@@ -130,7 +129,6 @@
                     <span class="checkbox__body">Мотель</span>
                   </label>
                 </li>
-
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input type="radio" name="catalog-group" value="apartaments">
@@ -146,17 +144,18 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <div class="catalog-filter-price">
-                  <label class="catalog-filter-label">
-                    <input class="range-input min-price" type="number" value="0" name="min-price" style="width: 143px">
-                    <span class="price-scope-low">от</span>
-                  </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input min-price" type="number" value="0" name="min-price"
+                        style="width: 143px">
+                      <span class="price-scope-low">от</span>
+                    </label>
 
-                  <label class="catalog-filter-label">
-                    <input class="range-input max-price" type="number" value="9000" name="max-price"
-                      style="width: 143px">
+                    <label class="catalog-filter-label">
+                      <input class="range-input max-price" type="number" value="9000" name="max-price"
+                        style="width: 143px">
                       <span class="price-scope-hight">до</span>
-                  </label>
-                </div>
+                    </label>
+                  </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 1px; width: 226px">
                       <button class="range-toggle toggle-min">
@@ -177,13 +176,13 @@
           </form>
         </header>
 
-        <section class="catalog-hotels">
+        <!-- Catalog -->
 
+        <section class="catalog-hotels">
           <div class="sorting-container">
             <p class="catalog-result">Найдено гостиниц:
               <span>38</span>
             </p>
-
             <div class="sorting-list">
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала дешевые</option>
@@ -210,7 +209,6 @@
                   </defs>
                 </svg>
               </a>
-
               <a class="sorting-button" href="#">
                 <span class="visually-hidden">Слайдер</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
@@ -225,7 +223,6 @@
                   </defs>
                 </svg>
               </a>
-
               <a class="sorting-button" href="#">
                 <span class="visually-hidden">Показать список</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
@@ -250,10 +247,9 @@
           </div>
           <ul class="product-list">
             <li class="product-card">
-              <img class="product-card-image" src="images/AmaraResort&Spa.jpg" width="300" height="212"
+              <img class="product-card-image" src="./images/AmaraResort&Spa.jpg" width="300" height="212"
                 alt="Amara Resort & Spa">
               <a class="product-card-link" href="index.html">
-
                 <h2 class="product-card-title">Amara Resort & Spa</h2>
               </a>
               <p class="product-card-description">
@@ -267,17 +263,17 @@
               <div class="raiting">
                 <p class="hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
                 </p>
                 <p class="hotels-raiting">Рейтинг: 8,5</p>
               </div>
             </li>
 
             <li class="product-card">
-              <img class="product-card-image" src="images/Villas_at_PocoDiablo.jpg" width="300" height="212"
+              <img class="product-card-image" src="./images/Villas_at_PocoDiablo.jpg" width="300" height="212"
                 alt="Villas at PocoDiablo">
               <a class="product-card-link" href="index.html">
                 <h2 class="product-card-title">Villas at Poco Diablo</h2>
@@ -293,17 +289,17 @@
               <div class="raiting">
                 <p class="hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
                 </p>
                 <p class="hotels-raiting">Рейтинг: 9,2</p>
               </div>
             </li>
 
             <li class="product-card">
-              <img class="product-card-image" src="images/DesertQuail_Inn.jpg" width="300" height="212"
+              <img class="product-card-image" src="./images/DesertQuail_Inn.jpg" width="300" height="212"
                 alt="Desert Quail Inn">
               <a class="product-card-link" href="index.html">
                 <h2 class="product-card-title">Desert Quail Inn</h2>
@@ -319,16 +315,16 @@
               <div class="raiting">
                 <p class="hotel-stars">
                   <span class="visually-hidden">3 звезды</span>
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
                 </p>
                 <p class="hotels-raiting">Рейтинг: 6,9</p>
               </div>
             </li>
 
             <li class="product-card">
-              <img class="product-card-image" src="images/GreenTreeInn.jpg" width="300" height="212"
+              <img class="product-card-image" src="./images/GreenTreeInn.jpg" width="300" height="212"
                 alt="Green Tree Inn">
               <a class="product-card-link" href="index.html">
                 <h2 class="product-card-title">GreenTree Inn</h2>
@@ -344,17 +340,17 @@
               <div class="raiting">
                 <p class="hotel-stars">
                   <span class="visually-hidden">2 звезды</span>
-                  <img src="images/Star.svg" alt="звезда">
-                  <img src="images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
+                  <img src="./images/Star.svg" alt="звезда">
                 </p>
                 <p class="hotels-raiting">Рейтинг: 5,0</p>
               </div>
             </li>
           </ul>
 
+          <!-- Pagination -->
+
           <div class="pagination-line"></div>
-
-
           <ul class="pagination">
             <li class="pagination-item pagination-current">
               <span>1</span>
@@ -377,6 +373,8 @@
           </ul>
         </section>
 
+        <!-- Subscribe -->
+
         <div class="subscribe-grey-bg">
           <h2 class="subscribe-title-hotels">Подпишитесь на рассылку</h2>
           <p class="subscribe-description-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -388,6 +386,8 @@
           </div>
         </div>
       </main>
+
+      <!-- Footer -->
 
       <footer class="page-footer">
         <ul class="page-footer-list">
@@ -422,11 +422,9 @@
             </a>
           </li>
         </ul>
-
         <div class="footer-tel">
           <a class="contacts-link" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
         </div>
-
         <div class="footer-logo">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34" fill="none">
