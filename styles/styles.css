@@ -196,10 +196,10 @@ body {
 /* Main */
 
 .main-header {
-  background-image: url(../images/index-background.jpg);
   background-color: #7295BA;
+  background-image: url(../images/index-background.jpg);
   color: #000000;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 25px;
   padding-top: 51px;
@@ -387,8 +387,8 @@ body {
 /* Subscribe */
 
 .subscribe {
-  background-image: url(../images/subscribe-background.jpg);
   background-color: #7B655F;
+  background-image: url(../images/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -861,8 +861,8 @@ body {
 /* ------------------------------------hotels.html------------------------------------ */
 
 .inner-header {
-  background-image: url(../images/catalog-background.png);
   background-color: #6D5F5E;
+  background-image: url(../images/catalog-background.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 35px 70px 57px 70px;
